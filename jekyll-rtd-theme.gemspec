@@ -1,5 +1,5 @@
 Gem::Specification.new do |spec|
-  spec.name          = "芯摆渡"
+  spec.name          = "OnChip"
   spec.version       = "2.0.10"
   spec.authors       = ["OnChip"]
   spec.email         = ["chengrui_zhou@163.com"]
