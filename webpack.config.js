@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        OnChip: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
