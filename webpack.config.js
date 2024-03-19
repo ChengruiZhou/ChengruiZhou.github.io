@@ -25,7 +25,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.js$/,
+        OnChip: /\.js$/,
         use: {
           loader: "babel-loader",
           options: {
