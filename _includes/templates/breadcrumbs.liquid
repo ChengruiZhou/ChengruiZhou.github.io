@@ -21,7 +21,7 @@
                         {%- if forloop.last -%}
                             {{ page.name }}
                         {%- else -%}
-                            <a href="{{ site.baseurl }}/{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block }}</a>
+                            <a href="{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block }}</a>
                         {%- endif -%}
                     </li>
                 {%- endfor -%}
