@@ -15,7 +15,16 @@
                     404
                 </li>
             {%- else -%}
-                {%- assign blocks = page.path | split: "/" -%}
+                {%- assign blocks = page.path -%}
+                {%- for block in blocks -%}
+                    <li class="breadcrumb-item" {% if forloop.last %}aria-current="page"{% endif %}>
+                        {%- if forloop.last -%}
+                            {{ page.name }}
+                        {%- else -%}
+                            <a href="{{ site.baseurl }}/{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block }}</a>
+                        {%- endif -%}
+                    </li>
+                {%- endfor -%}
         {%- endcase -%}
     </ul>
 </div>
