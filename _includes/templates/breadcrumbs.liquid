@@ -16,15 +16,6 @@
                 </li>
             {%- else -%}
                 {%- assign blocks = page.path | split: "/" -%}
-                {%- for block in blocks -%}
-                    <li class="breadcrumb-item" {% if forloop.last %}aria-current="page"{% endif %}>
-                        {%- if forloop.last -%}
-                            {{ page.name }}
-                        {%- else -%}
-                           
-                        {%- endif -%}
-                    </li>
-                {%- endfor -%}
         {%- endcase -%}
     </ul>
 </div>
