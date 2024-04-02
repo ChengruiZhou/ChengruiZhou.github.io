@@ -90,7 +90,7 @@ int main(void)
 
 ![image-20240402101700211](C:\Users\MyPC\AppData\Roaming\Typora\typora-user-images\image-20240402101700211.png)
 
-JSON数据生成
+### JSON数据生成
 
 ```c
 #include <stdio.h>
@@ -141,7 +141,7 @@ int main(void)
 
 ![image-20240402101809362](C:\Users\MyPC\AppData\Roaming\Typora\typora-user-images\image-20240402101809362.png)
 
-### 解析本地JSON问价
+### 解析本地JSON文件
 
 ```c
 #include <stdio.h>
