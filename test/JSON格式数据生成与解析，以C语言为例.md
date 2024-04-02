@@ -88,7 +88,7 @@ int main(void)
 
 打印结果：
 
-![image-20240402101700211](C:\Users\MyPC\AppData\Roaming\Typora\typora-user-images\image-20240402101700211.png)
+![image-20240402101700211](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/image-20240402101700211.png)
 
 ### JSON数据生成
 
@@ -139,7 +139,7 @@ int main(void)
 }
 ```
 
-![image-20240402101809362](C:\Users\MyPC\AppData\Roaming\Typora\typora-user-images\image-20240402101809362.png)
+![image-20240402101809362](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/image-20240402101809362.png)
 
 ### 解析本地JSON文件
 
@@ -203,6 +203,6 @@ int main(void)
 }
 ```
 
-![image-20240402104222187](C:\Users\MyPC\AppData\Roaming\Typora\typora-user-images\image-20240402104222187.png)
+![image-20240402104222187](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/image-20240402104222187.png)
 
-![image-20240402104238685](C:\Users\MyPC\AppData\Roaming\Typora\typora-user-images\image-20240402104238685.png)
+![image-20240402104238685](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/image-20240402104238685.png)
