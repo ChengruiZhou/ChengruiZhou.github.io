@@ -134,5 +134,83 @@ ROS 2将复杂的系统分解成许多模块化节点。话题是ROS图中至关
 
 话题是数据在节点之间移动，从而在系统的不同部分之间移动的主要方式之一。
 
+### 查看正在发布的关于某个话题的数据
+
+```bash
+ros2 topic echo <topic_name>
+```
+
+### 话题信息
+
+```bash
+ros2 topic info <topic_name>
+```
+
+### 界面展示
+
+节点使用消息通过话题发送数据。发布者和订阅者必须发送和接收相同类型的消息才能进行通信。
+
+我们之前在运行 `ros2 topic list -t` 后看到的话题类型让我们知道每个话题使用了什么信息类型。重新调用 `cmd_vel` 话题的类型: 
+
+```bash
+geometry_msgs/msg/Twist
+```
+
+
+
+这意味着在 `geometry_msgs` 包装中有一个 `msg` 调用 `Twist` 。 [[待校准@8844\]](http://dev.ros2.fishros.com/calibpage/#/home?msgid=8844)
+
+现在我们可以在这种类型上运行 `ros2 interface show <msg type>` 来了解它的细节，特别是调用y，消息期望的数据结构。 
+
+```bash
+ros2 interface show geometry_msgs/msg/Twist
+```
+
+对于上面的消息类型，它产生: 
+
+```bash
+# This expresses velocity in free space broken into its linear and angular parts.
+
+    Vector3  linear
+    Vector3  angular
+```
+
+这告诉你， `/turtlesim` 节点期望有两个向量的消息， `linear` 和 `angular` ，每个向量有三个元素。如果你重新调用数据，我们看到 `/teleop_turtle` 用 `echo` 命令传递给 `/turtlesim` ，它的结构是一样的
+
+### 话题酒吧
+
+消息结构，您可以使用以下命令直接从命令行将数据发布到话题上
+
+```bash
+ros2 topic pub <topic_name> <msg_type> '<args>'
+```
+
+'<args>''' 参数是您将传递给话题的实际数据，位于您在上一节中刚刚发现的结构中。
+
+需要注意的是，此参数需要以YAML语法输入。输入完整命令，如下所示: 
+
+```bash
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+```
+
+[需手动修复的语法]``--once`` is是一个可选参数，意思是 “发布一条消息然后退出”。
+
+您将在终端中收到以下消息:
+
+```bash
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=2.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=1.8))
+```
+
+### 数据发布的速率
+
+```bash
+ros2 topic hz <topic_name>
+```
+
+
+
+
+
 
 
