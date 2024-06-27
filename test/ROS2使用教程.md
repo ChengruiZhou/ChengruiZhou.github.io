@@ -86,3 +86,53 @@ http://www.network-science.de/ascii/
 - 
   三. 给脚本文件增加可执行权限,sudo chmod 755 60-my-welcome-info
 
+## ROS2节点
+
+**Goal目标**: Learn了解ROS 2中节点的功能以及与它们交互的工具。
+
+ROS中的每个节点应负责单个模块目的 (例如，一个用于控制车轮电机的节点，一个用于控制激光测距仪的节点等)。每个节点可以通过话题、服务、动作或参数向其他节点发送和接收数据。一个完整的机器人系统由许多协同工作的节点组成。在ROS 2中，单个可执行文件 (cprogram程序、Python程序等) 可以包含一个或多个节点。
+
+![../_images/Nodes-TopicandService.gif](http://dev.ros2.fishros.com/doc/_images/Nodes-TopicandService.gif)
+
+### 基本使用
+
+运行节点操作
+
+```bash
+ros2 run <package_name> <executable_name>
+```
+
+显示所有正在运行的节点的名称：
+
+```bash
+ros2 node list
+```
+
+默认节点属性 (如节点名称、话题名称、服务名称等) 重新分配给自定义值，如名称
+
+```bash
+ros2 run <package_name> <executable_name> --ros-args --remap __node:=<executable_name>
+```
+
+ros2节点信息
+
+```bash
+ros2 node info <node_name>
+```
+
+## ROS2话题Topic
+
+ROS 2将复杂的系统分解成许多模块化节点。话题是ROS图中至关重要的元素，它充当节点交换消息的总线。
+
+![../../_images/Topic-SinglePublisherandSingleSubscriber.gif](http://dev.ros2.fishros.com/doc/_images/Topic-SinglePublisherandSingleSubscriber.gif)
+
+节点可以将数据发布到任意数量的话题，同时订阅任意数量的话题。
+
+![../../_images/Topic-MultiplePublisherandMultipleSubscriber.gif](http://dev.ros2.fishros.com/doc/_images/Topic-MultiplePublisherandMultipleSubscriber.gif)
+
+
+
+话题是数据在节点之间移动，从而在系统的不同部分之间移动的主要方式之一。
+
+
+
