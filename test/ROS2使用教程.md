@@ -276,6 +276,45 @@ URDF模型文件使用的是XML格式，上图就是一个机器人的URDF描述
 
 
 
+## 终端
+```bash
+sudo apt-get install terminator
+```
+更新后，打开终端，可以使用“Crtl + Shift + E”，在同一终端下，进行分屏打开终端
+
+### rosdep
+
+rosdep命令可以用来安装功能包的依赖项
+
+```bash
+sudo apt-get install python-rosdep
+```
+ 第一次安装需要进行初始化
+```bash
+sudo rosdep init
+```
+这将在/etc/ros/rosdep/sources.list.d中，创建20-default.list文件，文件中包含ROS官网的5个下载路径,然后更新缓存
+```bash
+rosdep update
+```
+rosdep的使用
+在使用前，需要先更新，即2中更新语句
+
+（1）查看需要的依赖项
+```bash
+rosdep check --from-paths src --ignore-src -r -y
+```
+（2）安装依赖项
+```bash
+rosdep install --from-paths src --ignore-src -r -y
+```
+注：此法并非所有依赖项都能自动安装，如若colcon build仍报缺包的错误
+```bash
+sudo apt-get install ros-版本号-包名
+```
+
+## 安装cp210x驱动 usbserial
+sudo modprobe usbserial
 
 
 
