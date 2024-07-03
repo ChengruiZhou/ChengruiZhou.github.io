@@ -92,8 +92,6 @@ http://www.network-science.de/ascii/
 
 ROS中的每个节点应负责单个模块目的 (例如，一个用于控制车轮电机的节点，一个用于控制激光测距仪的节点等)。每个节点可以通过话题、服务、动作或参数向其他节点发送和接收数据。一个完整的机器人系统由许多协同工作的节点组成。在ROS 2中，单个可执行文件 (cprogram程序、Python程序等) 可以包含一个或多个节点。
 
-![../_images/Nodes-TopicandService.gif](http://dev.ros2.fishros.com/doc/_images/Nodes-TopicandService.gif)
-
 ### 基本使用
 
 运行节点操作
@@ -124,11 +122,11 @@ ros2 node info <node_name>
 
 ROS 2将复杂的系统分解成许多模块化节点。话题是ROS图中至关重要的元素，它充当节点交换消息的总线。
 
-![../../_images/Topic-SinglePublisherandSingleSubscriber.gif](http://dev.ros2.fishros.com/doc/_images/Topic-SinglePublisherandSingleSubscriber.gif)
+<!-- ![../../_images/Topic-SinglePublisherandSingleSubscriber.gif](http://dev.ros2.fishros.com/doc/_images/Topic-SinglePublisherandSingleSubscriber.gif) -->
 
 节点可以将数据发布到任意数量的话题，同时订阅任意数量的话题。
 
-![../../_images/Topic-MultiplePublisherandMultipleSubscriber.gif](http://dev.ros2.fishros.com/doc/_images/Topic-MultiplePublisherandMultipleSubscriber.gif)
+<!-- ![../../_images/Topic-MultiplePublisherandMultipleSubscriber.gif](http://dev.ros2.fishros.com/doc/_images/Topic-MultiplePublisherandMultipleSubscriber.gif) -->
 
 
 
@@ -212,7 +210,7 @@ ros2 topic hz <topic_name>
 
 
 
-# URDF机器人建模
+## URDF机器人建模
 
 1. [ROS2进阶第一章 -- 从头开始构建一个可视化的差速轮式机器人模型 -- 学习URDF机器人建模与xacro优化_两轮差速机器人在ros中的urdf-CSDN博客](https://blog.csdn.net/weixin_45897172/article/details/138439323?spm=1001.2014.3001.5502)
 2. [ROS高效进阶第二章 -- 以差速轮式机器人为例，学习URDF机器人建模与xacro优化_两轮差速机器人urdf-CSDN博客](https://blog.csdn.net/cy1641395022/article/details/131830631?spm=1001.2014.3001.5502)
@@ -234,7 +232,7 @@ ros2 topic hz <topic_name>
 
 **机器人定义**：机器人通常被定义为能够执行预先编程任务的自动化机械装置或人工智能系统。这些任务可以涉及各种各样的活动，从简单的生产线上的重复性工作，到复杂的手术操作或危险环境中的探索。通常，机器人具有传感器来感知周围环境，并且能够根据这些感知采取行动。机器人的形态可以各不相同，有些像人类，有些像动物，有些则完全抽象。机器人通常被用于自动化生产和加工、执行危险任务、探索和科学研究等领域。
 **机器人构成**：机器人一般是由硬件结构、驱动系统、传感器系统、控制系统四大部分组成，市面上一些常见的机器人，无论是移动机器人还是机械臂，我们都可以按照这四大组成部分进行分解。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/020ccf54f1aa4987ba99a7b3d9795dc8.png#pic_center)
+<!-- ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/020ccf54f1aa4987ba99a7b3d9795dc8.png#pic_center) -->
 
 - 硬件结构就是底盘、外壳、电机等实打实可以看到的设备；
 
@@ -246,7 +244,7 @@ ros2 topic hz <topic_name>
 
 机器人四大部分的控制回路，大致如图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/db3fe84f37ed44f186fb49bbbf520f30.png#pic_center)
+<!-- ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/db3fe84f37ed44f186fb49bbbf520f30.png#pic_center) -->
 
 - 执行机构:人体的手和脚，直接面向工作对象的机械装置。
 
@@ -256,11 +254,11 @@ ros2 topic hz <topic_name>
 
 ### URDF建模套路
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/42f2023f9f904666a4070e0bc84054df.png#pic_center)
+<!-- ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/42f2023f9f904666a4070e0bc84054df.png#pic_center) -->
 
 ROS中的建模方法叫做URDF，全称是统一机器人描述格式，不仅可以清晰描述机器人自身的模型，还可以描述机器人的外部环境，比如这里的桌子，也可以算作一个模型。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/bc3b297b353e416aa96eeb0df1d71f88.png#pic_center)
+<!-- ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/bc3b297b353e416aa96eeb0df1d71f88.png#pic_center) -->
 
 URDF模型文件使用的是XML格式，上图就是一个机器人的URDF描述，乍看上去，有点像网页开发的源代码，都是由一系列尖括号包围的标签和其中的属性组合而成。
 
