@@ -316,6 +316,15 @@ sudo apt-get install ros-版本号-包名
 ## 安装cp210x驱动 usbserial
 sudo modprobe usbserial
 
+### 检测端口号
+```bash
+ ls -l  /dev |grep ttyUSB*
+ ```
+### 串口权限开启
+临时权限（现用）
+```bash
+sudo gedit /etc/udev/rules.d/70-ttyusb.rules
+ ```
 
 
 
