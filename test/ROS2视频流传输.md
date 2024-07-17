@@ -2,7 +2,9 @@
 sort: 4
 ---
 # ROS2视频流传输
-
+```note
+The `turtlebot4` packages are automatically installed when either of `turtlebot4_robot` or `turtlebot4_simulator` is installed.
+```
 ## 连接并测试USB摄像头
 
 
