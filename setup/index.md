@@ -1,11 +1,7 @@
 ---
-sort: 1
+sort: 2
 ---
 
-# ROS
+# Setup
 
 {% include list.liquid all=true %}
-
-```tip
-Set config 
-```

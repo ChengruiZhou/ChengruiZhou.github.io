@@ -1,11 +1,7 @@
 ---
-sort: 1
+sort: 8
 ---
 
-# ROS
+# Changelogs
 
 {% include list.liquid all=true %}
-
-```tip
-Set config 
-```
