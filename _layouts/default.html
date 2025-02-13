@@ -34,3 +34,10 @@
     {% include scripts.html %}
   </body>
 </html>
+
+<ul>
+  {% for category in site.categories %}
+    <li><a href="{{ site.baseurl }}{{ site.category_archive.path }}{{ category[0] | slugify }}/">{{ category[0] }}</a></li>
+  {% endfor %}
+</ul>
+
