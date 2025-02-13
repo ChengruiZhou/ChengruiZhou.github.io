@@ -5,7 +5,7 @@ main:
   - title: "分类"
     url: /categories/
   - title: "标签"
-    url: https://space.bilibili.com/434538404/
+    url: /tags/
   - title: "Bilibili"
     url: https://space.bilibili.com/434538404/
   # - title: "Sample Posts"
