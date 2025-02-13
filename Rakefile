@@ -95,7 +95,7 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
       nav: "docs",
     },
     last_modified_at: Time.now.iso8601,
-    toc: false,
+    toc: true,
   }
   # https://stackoverflow.com/a/49553523/5958455
   front_matter = JSON.parse(JSON.dump(front_matter))
