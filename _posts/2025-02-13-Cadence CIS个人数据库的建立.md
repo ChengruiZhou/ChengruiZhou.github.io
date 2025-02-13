@@ -1,11 +1,13 @@
 ---
 layout: post
-toc: true
 title: "Cadence CIS个人数据库的建立."
 date: 2025-02-13 20:00:00 +0800
 categories: [硬件设计]
 tags: [Cadence]
 comments: true  # 启用评论
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"
 ---
 
 # Cadence CIS个人数据库的建立
