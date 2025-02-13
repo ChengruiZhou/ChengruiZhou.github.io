@@ -119,7 +119,7 @@ analytics:
 author:
   name             : "芯摆渡"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "嵌入式开发 | 硬件设计 | 电子技术"
+  bio              : "硬件设计 | 电子技术"
   location         : "江苏"
   email            : "chengrui_zhou@163.com"
   links:
