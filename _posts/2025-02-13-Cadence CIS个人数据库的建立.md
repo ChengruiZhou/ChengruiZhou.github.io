@@ -10,7 +10,6 @@ toc_label: "Unique Title"
 toc_icon: "heart"
 ---
 
-# Cadence CIS个人数据库的建立
 
 ## 前言
 
