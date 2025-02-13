@@ -7,11 +7,11 @@ tags:
 ---
 
 
-## 前言
+
 
 Cadence OrCAD支持强大的数据库功能，可以实现不同电脑之间共用数据库，方便统一管理。特别是在大公司，不同的人在画原理图和PCB时候为了保证大家的库是一致的，使用Database Part功能就显得非常方便，同时支持ERP等系统管理，可以做到设计、采购、生产之间数据同步。
 
-## 一、MySQL数据库安装
+一、MySQL数据库安装
 
 本教程使用的是MySQL数据库，配合数据库管理软件HeidiSQL来实现，该方式免费，安装使用起来方便，当然也可以使用微软的Access数据库软件来实现。
 
@@ -29,7 +29,7 @@ Cadence OrCAD支持强大的数据库功能，可以实现不同电脑之间共�
 
 ![image-20240822131259164](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/CIS datasheet/image-20240822131259164.png)
 
-## 二、数据库管理
+二、数据库管理
 
 安装好数据库，我们还需要一个软件来进行创建和管理我们的数据库，这里使用免费的HeidiSQL数据库管理软件。
 
@@ -58,7 +58,7 @@ Cadence OrCAD支持强大的数据库功能，可以实现不同电脑之间共�
 
 ![image-20240822131758065](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/CIS datasheet/image-20240822131758065.png)
 
-## 三、配置数据源
+三、配置数据源
 
 安装MySQL ODBC Driver，一定要安装64位的，17.4只能用64位，下载地址
 https://dev.mysql.com/downloads/connector/odbc/3.51.html
@@ -73,7 +73,7 @@ ODBC 数据源 64位![image-20240822131913623](https://github.com/ChengruiZhou/C
 
 ![image-20240822132153227](https://github.com/ChengruiZhou/ChengruiZhou.github.io/raw/main/pictures/CIS datasheet/image-20240822132153227.png)
 
-## 四、Capture CIS配置
+四、Capture CIS配置
 
 建立好数据库后，需要将数据库和我们软件关联起来
 
