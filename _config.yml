@@ -109,7 +109,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -117,15 +117,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "芯摆渡"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "嵌入式开发 | 硬件设计 | 电子技术"
+  location         : "江苏"
+  email            : "chengrui_zhou@163.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "chengrui_zhou@163.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -153,7 +153,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: https://github.com/ChengruiZhou/
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
