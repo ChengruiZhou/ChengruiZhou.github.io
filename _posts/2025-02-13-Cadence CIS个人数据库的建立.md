@@ -8,6 +8,9 @@ comments: true  # 启用评论
 toc: true
 toc_label: "Unique Title"
 toc_icon: "heart"
+tagline: "Cadence CIS."
+header:
+  overlay_image: /pictures/Cadence_Logo.png
 ---
 
 
