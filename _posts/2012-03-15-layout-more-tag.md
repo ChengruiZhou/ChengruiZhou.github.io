@@ -8,6 +8,7 @@ tags:
   - content
   - read more
   - layout
+comments: true  # 启用评论
 ---
 
 This content is before the [excerpt separator tag](http://jekyllrb.com/docs/posts/#post-excerpts).
