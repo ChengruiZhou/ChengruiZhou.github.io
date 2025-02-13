@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "芯摆渡"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://github.com/ChengruiZhou/ChengruiZhou.github.io/blob/main/pictures/logo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Electronics, Embedded & Web."
   location         : "Somewhere"
   email            :
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: https://github.com/ChengruiZhou/
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
