@@ -25,7 +25,7 @@ description              : "Personal website."
 url                      : "https://chengruizhou.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/pictures/logo.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
@@ -34,7 +34,7 @@ enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : giscus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -59,23 +59,6 @@ comments:
     emit_metadata        : 1 # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
     lang                 : "zh-CN" # "en" (default)
     lazy                 : true # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
-
-# <script src="https://giscus.app/client.js"
-#         data-repo="ChengruiZhou/ChengruiZhou.github.io"
-#         data-repo-id="R_kgDON41oYw"
-#         data-category="General"
-#         data-category-id="DIC_kwDON41oY84Cm7j8"
-#         data-mapping="pathname"
-#         data-strict="0"
-#         data-reactions-enabled="1"
-#         data-emit-metadata="0"
-#         data-input-position="top"
-#         data-theme="preferred_color_scheme"
-#         data-lang="zh-CN"
-#         crossorigin="anonymous"
-#         async>
-# </script>
-
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
