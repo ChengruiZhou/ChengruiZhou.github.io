@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "首页"
+    url: https://chengruizhou.github.io/
+  - title: "Bilibili"
+    url: https://space.bilibili.com/434538404/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
