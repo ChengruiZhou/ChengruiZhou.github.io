@@ -1,0 +1,12 @@
+---
+layout: default
+title: "类别"
+---
+
+<h1>类别</h1>
+
+<ul>
+  {% for category in site.categories %}
+    <li><a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}">{{ category[0] }}</a></li>
+  {% endfor %}
+</ul>

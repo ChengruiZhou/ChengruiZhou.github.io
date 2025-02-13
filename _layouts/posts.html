@@ -28,3 +28,24 @@ layout: archive
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}
+
+{% if page.categories %}
+  <div class="categories">
+    <strong>类别:</strong> 
+    {% for category in page.categories %}
+      <a href="{{ site.baseurl }}/categories/{{ category | slugify }}">{{ category }}</a>
+      {% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if page.tags %}
+  <div class="tags">
+    <strong>标签:</strong> 
+    {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}">{{ tag }}</a>
+      {% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}
+
