@@ -168,7 +168,8 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - _pages
+  # - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -194,8 +195,8 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  # - /docs # ignore Minimal Mistakes /docs
+  # - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
