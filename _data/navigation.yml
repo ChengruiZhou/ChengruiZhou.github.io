@@ -3,13 +3,15 @@ main:
   - title: "首页"
     url: https://chengruizhou.github.io/
   - title: "分类"
-    url: /portfolio/
+    url: /categories-grid/
   - title: "标签"
-    url: /tags/
+    url: /tags-grid/
+  - title: "历年文章"
+    url: /year-archive-grid/
   - title: "Bilibili"
     url: https://space.bilibili.com/434538404/
   - title: "About"
-    url: /sitemap/
+    url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
