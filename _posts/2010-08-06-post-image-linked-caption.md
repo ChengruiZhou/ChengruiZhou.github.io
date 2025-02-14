@@ -2,9 +2,6 @@
 title: "Post: Image (Linked with Caption)"
 categories:
   - Post Formats
-tags:
-  - image
-  - Post Formats
 ---
 
 {% capture fig_img %}

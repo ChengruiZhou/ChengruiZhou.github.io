@@ -4,12 +4,6 @@ header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 categories:
   - Markup
-tags:
-  - content
-  - css
-  - formatting
-  - html
-  - markup
 toc: true
 toc_sticky: true
 ---

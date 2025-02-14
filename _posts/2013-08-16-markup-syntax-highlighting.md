@@ -6,7 +6,6 @@ header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
   - code
-  - syntax highlighting
 toc: true
 ---
 
