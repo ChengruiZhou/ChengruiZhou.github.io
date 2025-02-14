@@ -10,4 +10,4 @@ tags:
 
 使用Allegro Library Creator绘制封装教程
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113012266568403&bvid=BV16uWQewEt5&cid=500001659977459&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe width="640" height="360" src="//player.bilibili.com/player.html?isOutside=true&aid=113012266568403&bvid=BV16uWQewEt5&cid=500001659977459&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
