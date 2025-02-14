@@ -327,7 +327,7 @@ defaults:
       read_time: true
       comments: true # true
       share: true
-      related: true
+      related: false 
   # _pages
   - scope:
       path: "_pages"
@@ -335,3 +335,4 @@ defaults:
     values:
       layout: single
       author_profile: true
+      comments: true # true

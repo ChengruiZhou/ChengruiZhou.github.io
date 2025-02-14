@@ -2,7 +2,7 @@
 title: "About"
 layout: page
 permalink: /about/
-comments: true
+# comments: true
 ---
 
 ### 关于我
