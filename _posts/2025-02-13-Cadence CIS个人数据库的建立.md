@@ -4,10 +4,10 @@ categories:
   - 硬件设计
 tags:
   - Cadence
-last_modified_at: 2025-02-13
 toc: true
 ---
 
+## 前言
 
 Cadence OrCAD支持强大的数据库功能，可以实现不同电脑之间共用数据库，方便统一管理。特别是在大公司，不同的人在画原理图和PCB时候为了保证大家的库是一致的，使用Database Part功能就显得非常方便，同时支持ERP等系统管理，可以做到设计、采购、生产之间数据同步。
 
