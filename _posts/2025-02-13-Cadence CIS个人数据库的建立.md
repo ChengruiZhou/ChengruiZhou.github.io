@@ -11,6 +11,10 @@ toc_icon: "cog"
 
 ## 前言
 
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/-PVofD2A9t8?controls=0" frameborder="0" allowfullscreen></iframe>
+
+<!-- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113012266568403&bvid=BV16uWQewEt5&cid=500001659977459&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> -->
+
 Cadence OrCAD支持强大的数据库功能，可以实现不同电脑之间共用数据库，方便统一管理。特别是在大公司，不同的人在画原理图和PCB时候为了保证大家的库是一致的，使用Database Part功能就显得非常方便，同时支持ERP等系统管理，可以做到设计、采购、生产之间数据同步。
 
 ### 一、MySQL数据库安装
