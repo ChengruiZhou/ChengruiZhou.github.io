@@ -10,6 +10,8 @@ main:
     url: https://space.bilibili.com/434538404/
   - title: "About"
     url: /archive-layout-with-content/
+  - title: "News"
+    url: /news/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
