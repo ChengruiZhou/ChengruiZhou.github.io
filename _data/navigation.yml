@@ -3,7 +3,7 @@ main:
   - title: "首页"
     url: https://chengruizhou.github.io/
   - title: "分类"
-    url: /categories/
+    url: /_pages/edge-case-grid.md
   - title: "标签"
     url: /tags/
   - title: "Bilibili"
