@@ -6,10 +6,10 @@ main:
     url: /categories-grid/
   - title: "标签"
     url: /tags-grid/
-  - title: "历年文章"
-    url: /year-archive-grid/
   - title: "Bilibili"
     url: https://space.bilibili.com/434538404/
+  - title: "Github"
+    url: https://github.com/ChengruiZhou/
   - title: "About"
     url: /about/
   # - title: "Sample Posts"
