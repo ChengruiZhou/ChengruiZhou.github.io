@@ -134,10 +134,10 @@ author:
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "https://caihanlin.com/images/logo/icons8-retro-tv-100.png"
       # url:
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon: https://caihanlin.com/images/logo/icons8-retro-tv-100.png
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
