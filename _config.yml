@@ -333,7 +333,7 @@ defaults:
   # _pages
   - scope:
       path: "_pages"
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
