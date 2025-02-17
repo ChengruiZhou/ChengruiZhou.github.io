@@ -326,6 +326,6 @@ defaults:
       read_time: false
       share: true
       related: false 
-      toc: true   # 启用目录
-      toc_sticky: true  # 目录固定在右侧
+      toc: true  
+      toc_sticky: true 
       comments: true
