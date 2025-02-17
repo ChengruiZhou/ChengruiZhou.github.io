@@ -33,35 +33,35 @@ words_per_minute         : 200
 enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
-comments:
-  provider               : disqus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : onchip # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : R_kgDON41oYw # Shown during giscus setup at https://giscus.app
-    category_name        : "General" # Full text name of the category
-    category_id          : "DIC_kwDON41oY84Cm7j8" # Shown during giscus setup at https://giscus.app
-    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : '1' # '1' for enabled (default), '0' for disabled
-    theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               : 0 # 1 for enabled, 0 for disabled (default)
-    input_position       : "top" # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : 1 # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 : "zh-CN" # "en" (default)
-    lazy                 : true # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+# comments:
+#   provider               : disqus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+#   disqus:
+#     shortname            : onchip # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+#   discourse:
+#     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+#   facebook:
+#     # https://developers.facebook.com/docs/plugins/comments
+#     appid                :
+#     num_posts            : # 5 (default)
+#     colorscheme          : # "light" (default), "dark"
+#   utterances:
+#     theme                : # "github-light" (default), "github-dark"
+#     issue_term           : # "pathname" (default)
+#   giscus:
+#     repo_id              : R_kgDON41oYw # Shown during giscus setup at https://giscus.app
+#     category_name        : "General" # Full text name of the category
+#     category_id          : "DIC_kwDON41oY84Cm7j8" # Shown during giscus setup at https://giscus.app
+#     discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
+#     reactions_enabled    : '1' # '1' for enabled (default), '0' for disabled
+#     theme                : "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+#     strict               : 0 # 1 for enabled, 0 for disabled (default)
+#     input_position       : "top" # "top", "bottom" # The comment input box will be placed above or below the comments
+#     emit_metadata        : 1 # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
+#     lang                 : "zh-CN" # "en" (default)
+#     lazy                 : true # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+#   staticman:
+#     branch               : # "master"
+#     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
