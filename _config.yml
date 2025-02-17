@@ -34,7 +34,7 @@ enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : giscus # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : valine # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -47,6 +47,14 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
+  valine:
+    enable: true
+    appId: "JpNjeFjJadZV61neeevyNsct-gzGzoHsz"
+    appKey: "NVQHUrm55fBRCj0gD3YH88TZ"
+    placeholder: "欢迎留言..."
+    avatar: "mp"
+    visitor: true
+    lang: "zh-CN"
   giscus:
     repo_id              : R_kgDON41oYw # Shown during giscus setup at https://giscus.app
     category_name        : "General" # Full text name of the category

@@ -1,0 +1,13 @@
+<div id="vcomments"></div>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '{{ site.comments.valine.appId }}',
+    appKey: '{{ site.comments.valine.appKey }}',
+    placeholder: '{{ site.comments.valine.placeholder | default: "欢迎留言..." }}',
+    avatar: '{{ site.comments.valine.avatar | default: "mp" }}',
+    visitor: {{ site.comments.valine.visitor | default: false }},
+    lang: '{{ site.comments.valine.lang | default: "zh-CN" }}'
+  });
+</script>
