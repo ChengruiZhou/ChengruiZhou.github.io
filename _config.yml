@@ -317,7 +317,6 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -330,11 +329,3 @@ defaults:
       toc: true   # 启用目录
       toc_sticky: true  # 目录固定在右侧
       comments: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      comments: true # true
