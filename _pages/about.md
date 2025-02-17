@@ -1,9 +1,8 @@
 ---
 title: "About"
 permalink: /about/
+author_profile: true
 ---
-
-### 关于我
 
 欢迎访问我的个人主页。
 
