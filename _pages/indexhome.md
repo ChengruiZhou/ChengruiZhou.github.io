@@ -3,7 +3,7 @@ layout: splash
 title: "芯摆渡"
 permalink: /
 header:
-  overlay_image: /pictures/2025-02/ROS2LOGO.png
+  overlay_image: /pictures/mm-customizable-feature.png
   overlay_filter: 0.5
 #   caption: "Photo credit: Unsplash"
   actions:
@@ -11,18 +11,27 @@ header:
       url: "/old-articles/"
 excerpt: "This is a brief introduction to my personal website."
 feature_row:
-  - image_path: /pictures/2025-02/ROS2LOGO.png
+  - image_path: /pictures/mm-responsive-feature.png
     alt: "First image"
     title: "First Feature"
     excerpt: "Short description of the first feature."
-  - image_path: /pictures/2025-02/ROS2LOGO.png
+    # url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /pictures/mm-free-feature.png
     alt: "Second image"
     title: "Second Feature"
     excerpt: "Short description of the second feature."
-  - image_path: /pictures/2025-02/ROS2LOGO.png
+    # url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /pictures/mm-free-feature.png
     alt: "Third image"
     title: "Third Feature"
     excerpt: "Short description of the third feature."
+    # url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
 
 
