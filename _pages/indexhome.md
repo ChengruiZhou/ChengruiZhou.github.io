@@ -9,7 +9,7 @@ header:
   actions:
     - label: "往期文章"
       url: "/old-articles/"
-excerpt: "This is a brief introduction to my personal website."
+# excerpt: "This is a brief introduction to my personal website."
 feature_row:
   - image_path: /pictures/2025-02/ROS2LOGO.png
     alt: "First image"
