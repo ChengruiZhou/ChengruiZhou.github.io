@@ -3,7 +3,7 @@ layout: splash
 title: "芯摆渡"
 permalink: /
 header:
-  overlay_image: /pictures/mm-customizable-feature.png
+  overlay_image: /pictures/mm-home-page-feature.jpg
   overlay_filter: 0.5
 #   caption: "Photo credit: Unsplash"
   actions:
