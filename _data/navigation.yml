@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "首页"
-    url: https://chengruizhou.github.io/
+    url: /
   - title: "分类"
     url: /categories-grid/
   - title: "标签"
