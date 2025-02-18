@@ -11,6 +11,23 @@ header:
       url: "/old-articles/"
 excerpt: "This is a brief introduction to my personal website."
 feature_row:
+  - image_path: /pictures/2025-02/ROS2LOGO.png
+    alt: "First image"
+    title: "First Feature"
+    excerpt: "Short description of the first feature."
+  - image_path: /pictures/2025-02/ROS2LOGO.png
+    alt: "Second image"
+    title: "Second Feature"
+    excerpt: "Short description of the second feature."
+  - image_path: /pictures/2025-02/ROS2LOGO.png
+    alt: "Third image"
+    title: "Third Feature"
+    excerpt: "Short description of the third feature."
+---
+
+
+{% include feature_row %}
+<!-- 
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
     title: "Super customizable"
@@ -32,7 +49,4 @@ feature_row:
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
----
-
-{% include feature_row %}
-
+    -->
