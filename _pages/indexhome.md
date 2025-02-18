@@ -25,7 +25,4 @@ feature_row:
     excerpt: "Short description of the third feature."
 ---
 
-## About My Site
-This is a brief introduction to my personal website.
-
 {% include feature_row %}
