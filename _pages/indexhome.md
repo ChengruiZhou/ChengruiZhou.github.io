@@ -1,14 +1,14 @@
 ---
 layout: splash
-title: "Welcome to My Site"
+title: "芯摆渡"
 permalink: /
 header:
   overlay_image: /pictures/2025-02/ROS2LOGO.png
   overlay_filter: 0.5
-  caption: "Photo credit: Unsplash"
+#   caption: "Photo credit: Unsplash"
   actions:
-    - label: "Download"
-      url: "https://example.com/download"
+    - label: "往期文章"
+      url: "/old-articles/"
 excerpt: "This is a brief introduction to my personal website."
 feature_row:
   - image_path: /pictures/2025-02/ROS2LOGO.png
