@@ -26,3 +26,28 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+
+<!-- 切换图片 -->
+ <!-- Swiper.js CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- 初始化 Swiper -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 3,  // 同时显示 3 张图片
+      spaceBetween: 20,   // 图片间距
+      loop: true,         // 无限循环
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
