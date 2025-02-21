@@ -15,7 +15,7 @@ feature_row:
     alt: "First image"
     title: "LinkGDBseries"
     excerpt: "LinkGDBseries上位机."
-    url: "/_posts/上位机LinkGDBserial.md"
+    url: "/上位机/LinkGDBserial/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /pictures/mm-free-feature.png
