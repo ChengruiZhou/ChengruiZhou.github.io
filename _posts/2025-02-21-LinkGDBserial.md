@@ -45,7 +45,7 @@ tags:
 
     - 无需修改目标芯片程序
 
-    - 理论上支持OpenOCD所支持的各种调试器及硬件芯片，如STLink、JLink、CMSIS-DAP等以及STM32全系列等
+    - 理论上支持OpenOCD所支持的各种调试器及硬件芯片，如STLink、JLink、CMSIS-DAP、altera-usb-blaster等。
 
         > 附OpenOCD官方文档： [支持的调试器](https://openocd.org/doc/html/Debug-Adapter-Hardware.html)、[支持的芯片](https://openocd.org/doc/html/CPU-Configuration.html#Target-CPU-Types)
 
