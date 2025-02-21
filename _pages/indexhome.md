@@ -17,21 +17,21 @@ feature_row:
     excerpt: "LinkGDBseries上位机."
     url: "/上位机/LinkGDBserial/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /pictures/mm-free-feature.png
+    btn_label: "阅读更多"
+  - image_path: /pictures/LCD.webp
     alt: "Second image"
     title: "Second Feature"
-    excerpt: "Short description of the second feature."
-    # url: "/docs/configuration/"
+    excerpt: "LCD驱动编写思路."
+    url: "/驱动编写/LCD驱动编写思路/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /pictures/mm-free-feature.png
+    btn_label: "阅读更多"
+  - image_path: /pictures/Cadence_Logo.png
     alt: "Third image"
     title: "Third Feature"
-    excerpt: "Short description of the third feature."
-    # url: "/docs/configuration/"
+    excerpt: "Cadence封装绘制教程."
+    url: "/硬件设计/Cadence封装绘制教程/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "阅读更多"
 ---
 
 
