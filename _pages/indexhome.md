@@ -20,14 +20,14 @@ feature_row:
     btn_label: "阅读更多"
   - image_path: /pictures/2025-02/LCD.png
     alt: "Second image"
-    title: "Second Feature"
+    title: "LCD驱动编写思路"
     excerpt: "LCD驱动编写思路."
     url: "/驱动编写/LCD驱动编写思路/"
     btn_class: "btn--primary"
     btn_label: "阅读更多"
   - image_path: /pictures/Cadence_Logo.png
     alt: "Third image"
-    title: "Third Feature"
+    title: "Cadence封装绘制教程"
     excerpt: "Cadence封装绘制教程."
     url: "/硬件设计/Cadence封装绘制教程/"
     btn_class: "btn--primary"
