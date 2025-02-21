@@ -18,7 +18,7 @@ feature_row:
     url: "/上位机/LinkGDBserial/"
     btn_class: "btn--primary"
     btn_label: "阅读更多"
-  - image_path: /pictures/LCD.webp
+  - image_path: /pictures/2025-02/LCD.png
     alt: "Second image"
     title: "Second Feature"
     excerpt: "LCD驱动编写思路."
