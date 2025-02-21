@@ -11,7 +11,7 @@ header:
       url: "/old-articles/"
 excerpt: "This is a brief introduction to my personal website."
 feature_row:
-  - image_path: /pictures/mm-responsive-feature.png
+  - image_path: /pictures/Link.png
     alt: "First image"
     title: "LinkGDBseries"
     excerpt: "LinkGDBseries上位机."
