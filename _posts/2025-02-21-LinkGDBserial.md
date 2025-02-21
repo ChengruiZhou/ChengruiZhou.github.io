@@ -101,8 +101,6 @@ tags:
 
 ![示意图](/pictures/2025-02/LinkGDB.png)
 
-![运行演示](/pictures/2025-02/run-demo.png)
-
 ![操作演示](/pictures/2025-02/oper-sample.gif)
 
 ![日志输出](/pictures/2025-02/log-sample.gif)
