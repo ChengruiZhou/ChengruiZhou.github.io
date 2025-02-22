@@ -650,7 +650,7 @@ void loop()
 <script>
 var gitalk = new Gitalk({
   	clientID: 'Ov23likK2BBmzZCwxElF',  // 使用你的 GitHub client ID
-  	// clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d', // 不暴露 clientSecret
+	clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d', // 不暴露 clientSecret
   	repo: 'chengruizhou.github.io',  // 你的评论仓库
   	owner: 'chengruizhou',
   	admin: ['chengruizhou'],
