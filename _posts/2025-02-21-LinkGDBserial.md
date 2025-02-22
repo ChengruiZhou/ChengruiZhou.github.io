@@ -652,7 +652,7 @@ var gitalk = new Gitalk({
   repo: 'chengruizhou.github.io',
   owner: 'chengruizhou',
   admin: ['chengruizhou'],
-  id: location.pathname,      // Ensure uniqueness and length less than 50
+  id: encodeURIComponent(location.pathname),  
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 
