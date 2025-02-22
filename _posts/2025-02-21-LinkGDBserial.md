@@ -640,20 +640,22 @@ void loop()
 }
 
 ```
+
 <!-- Gitalk 评论系统 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
-</script>
+
+<script>
 var gitalk = new Gitalk({
-  	clientID: 'Ov23likK2BBmzZCwxElF',
-	clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d',
-  repo: 'chengruizhou.github.io',
-  owner: 'chengruizhou',
-  admin: ['chengruizhou'],
-  id: encodeURIComponent(location.pathname),  
-  distractionFreeMode: false  // Facebook-like distraction free mode
+  	clientID: 'Ov23likK2BBmzZCwxElF',  // 使用你的 GitHub client ID
+  	// clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d', // 不暴露 clientSecret
+  	repo: 'chengruizhou.github.io',  // 你的评论仓库
+  	owner: 'chengruizhou',
+  	admin: ['chengruizhou'],
+  	id: encodeURIComponent(location.pathname),  // 确保唯一性
+  	distractionFreeMode: false  // 关闭无干扰模式
 });
 
 gitalk.render('gitalk-container');
