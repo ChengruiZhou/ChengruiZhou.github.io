@@ -653,9 +653,27 @@ var gitalk = new Gitalk({
     repo: 'blog-comments',  // 你创建的 GitHub 仓库
     owner: 'chengruizhou',
     admin: ['chengruizhou'],
-    id: encodeURIComponent(location.pathname),  // 确保每篇文章的评论唯一
+    id: location.pathname,  // 确保每篇文章的评论唯一
     distractionFreeMode: false  // 关闭无干扰模式
 });
 
 gitalk.render('gitalk-container');
 </script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+var gitalk = new Gitalk({
+  	clientID: 'Ov23likK2BBmzZCwxElF',
+	clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d',
+  repo: 'chengruizhou.github.io/',
+  owner: 'chengruizhou',
+  admin: ['chengruizhou'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
