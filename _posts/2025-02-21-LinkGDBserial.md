@@ -641,22 +641,18 @@ void loop()
 
 ```
 
-
-
 <!-- Gitalk 评论系统 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-
 <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
 
 <script>
 var gitalk = new Gitalk({
-    clientID: 'Ov23likK2BBmzZCwxElF',
-    clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d',  // **不能暴露，建议用代理**
-    repo: 'chengruizhou.github.io/',  // 你创建的 GitHub 仓库
+    clientID: '你的 GitHub Client ID',  // 这里填新的 Client ID
+    repo: 'blog-comments',  // 你创建的 GitHub 仓库
     owner: 'chengruizhou',
-    admin: ['chengruizhou'],  // 管理员
+    admin: ['chengruizhou'],
     id: location.pathname,  // 确保每篇文章的评论唯一
     distractionFreeMode: false  // 关闭无干扰模式
 });
