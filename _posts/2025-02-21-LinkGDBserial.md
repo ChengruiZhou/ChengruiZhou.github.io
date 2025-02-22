@@ -640,7 +640,7 @@ void loop()
 }
 
 ```
-
+<!-- Gitalk 评论系统 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
@@ -654,7 +654,7 @@ var gitalk = new Gitalk({
   admin: ['chengruizhou'],
   id: encodeURIComponent(location.pathname),  
   distractionFreeMode: false  // Facebook-like distraction free mode
-})
+});
 
-gitalk.render('gitalk-container')
+gitalk.render('gitalk-container');
 </script>
