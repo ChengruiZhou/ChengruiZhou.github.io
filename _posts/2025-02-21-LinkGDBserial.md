@@ -648,15 +648,28 @@ void loop()
 <div id="gitalk-container"></div>
 
 <script>
-var gitalk = new Gitalk({
-  	clientID: 'Ov23likK2BBmzZCwxElF',  // 使用你的 GitHub client ID
-	clientSecret: 'ec6ab853a35ab8de064eb3d1d031ebe324d1b86d', // 不暴露 clientSecret
-  	repo: 'chengruizhou.github.io',  // 你的评论仓库
-  	owner: 'chengruizhou',
-  	admin: ['chengruizhou'],
-  	id: encodeURIComponent(location.pathname),  // 确保唯一性
-  	distractionFreeMode: false  // 关闭无干扰模式
-});
+var gitalkConfig = {
+    clientID: "a2bdae5457402030fb6b",
+    clientSecret: "c1c9ce6f3334a85f5456b602ca138dee038fd414",
+    repo: "robotdemo.github.io",
+    owner: "zeroone001",
+    admin: ["zeroone001"],
+    perPage: 20,
+    language: "zh-CN",
+    // labels: ['Open'],
+    pagerDirection: "last",
+    distractionFreeMode: false,
+    proxy: 'http://192.168.31.16:8011'
+};
+const gitalk = new Gitalk({
+    clientID: 'GitHub Application Client ID',
+    clientSecret: 'GitHub Application Client Secret',
+    repo: 'https://github.com/zeroone001/robotdemo.github.io/tree/master',      // The repository of store comments,
+    owner: 'zeroone001',
+    admin: ['zeroone001'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+})
 
 gitalk.render('gitalk-container');
 </script>
