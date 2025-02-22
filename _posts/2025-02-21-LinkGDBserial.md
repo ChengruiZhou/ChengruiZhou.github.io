@@ -653,7 +653,7 @@ var gitalk = new Gitalk({
     repo: 'blog-comments',  // 你创建的 GitHub 仓库
     owner: 'chengruizhou',
     admin: ['chengruizhou'],
-    id: location.pathname,  // 确保每篇文章的评论唯一
+    id: encodeURIComponent(location.pathname),  // 确保每篇文章的评论唯一
     distractionFreeMode: false  // 关闭无干扰模式
 });
 
