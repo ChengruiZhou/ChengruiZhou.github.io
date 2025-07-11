@@ -8,7 +8,67 @@ toc: true
 
 ---
 
-1.  Create Scenario
+1. Create Scenario
+
+   uavTruth and gNBTruth
+
+    ```matlab
+      Identity：name
+      Position：
+      Velocity：
+      ObjectID：number
+    # numel(x)计算数组x中的数组元素数目  
+    ```
+
+   **getCarrierAndPRSConfigurations(numgNBs,numUAVs)**，numgNBs和numUAVs表示gNBs和UAVs的个数
+
+   **配置载波的相关说明**
+
+   % configures the carriers for all the gNBs and PRS configurations for each gNB and UAV pair.
+
+   > [!IMPORTANT]
+   >
+   > - **NCellID**: Physical layer cell identity, specified as an integer from 0 to 1007.
+   >
+   > - **Subcarrier spacing** in kHz, for all channels and reference signals of the carrier, specified as `15`, `30`, `60`, `120`, `240`, `480`, or `960`.
+   >
+   > - **Cyclic prefix length**, specified as one of these options.
+   >
+   >   - `'normal'` — Use this value to specify normal cyclic prefix. This option corresponds to 14 OFDM symbols in a slot.
+   >   - `'extended'` — Use this value to specify extended cyclic prefix. This option corresponds to 12 OFDM symbols in a slot. For the numerologies specified in TS 38.211 Section 4.2, extended cyclic prefix length applies for only 60 kHz subcarrier spacing.
+   >
+   > - **Number of RBs in the carrier resource grid**, specified as an integer from 1 to 275. The default value of `52` corresponds to the maximum number of RBs of a 10 MHz carrier with 15 kHz SCS.
+   >
+   > - **NSizeGrid**: Number of RBs in the carrier resource grid, specified as an integer from 1 to 275. The default value of `52` corresponds to the maximum number of RBs of a 10 MHz carrier with 15 kHz SCS.
+   >
+   > - **NStartGrid**: Start of carrier resource grid relative to CRB 0, specified as an integer from 0 to 2199. This property is the higher-layer parameter *offsetToCarrier*.
+   >
+   > - **NSlot**: Slot number, specified as a nonnegative integer. You can set `NSlot` to a value larger than the number of slots per frame. For example, you can set this value using transmission loop counters in a MATLAB® simulation. In this case, you may have to ensure that the property value is modulo the number of slots per frame in a calling code.
+   >
+   > - **NFrame**: System frame number, specified as a nonnegative integer. You can set `NFrame` to a value larger than the maximum frame number 1023. For example, you can set this value using transmission loop counters in a MATLAB simulation. In this case, you may have to ensure that the property value is modulo 1024 in a calling code.
+   >
+   > - **Intracell guard bands** for operation with shared spectrum channel access for FR1, specified as one of these options:
+   >
+   >   - *N*GB-by-2 matrix of nonnegative integers — *N*GB is the number of guard bands. Each row defines a guard band: the first column specifies the start of the guard band relative to the first CRB of the carrier, specified by [`NStartGrid`](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrcarrierconfig.html#mw_object_nrCarrierConfig_sep_mw_b4301222-b865-4350-a02f-081751489b6d), and the second column defines the size of the guard band in RBs.
+   >   - Cell array of [`nrIntraCellGuardBandsConfig`](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrintracellguardbandsconfig.html) objects — Only those guard band configurations that have the same subcarrier spacing as the [`SubcarrierSpacing`](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrcarrierconfig.html#mw_object_nrCarrierConfig_sep_mw_5af25740-a086-4ff7-97ac-68a9c6b1c0d1) object property are applicable.
+   >
+   >   The default value of `[]` indicates that intracell guard bands are not configured, which means that all resources are available.
+   >
+   >   This property corresponds to higher-layer parameter *IntraCellGuardBandsPerSCS* in TS 38.331[[2\]](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrcarrierconfig.html#mw_0f25964a-d086-4ac0-9f5f-32b9dda1c2c4).
+   >
+   > - This property is read-only.
+   >
+   >   Number of OFDM **symbols per slot**, returned as `14` for normal cyclic prefix or `12` for extended cyclic prefix. The object sets this property based on the [`CyclicPrefix`](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrcarrierconfig.html#mw_object_nrCarrierConfig_sep_mw_657a9836-801a-4574-886b-da4d4da33aa2) property.
+   >
+   > - This property is read-only.
+   >
+   >   **Number of slots per 1 ms subframe**, returned as `1`, `2`, `4`, `8`, `16`, `32` or `64`. The object sets this property based on the [`SubcarrierSpacing`](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrcarrierconfig.html#mw_object_nrCarrierConfig_sep_mw_5af25740-a086-4ff7-97ac-68a9c6b1c0d1) property values `15`, `30`, `60`, `120`, `240`, `480`, and `960`, respectively.
+   >
+   > - This property is read-only.
+   >
+   >   **Number of slots per 10 ms frame,** returned as `10`, `20`, `40`, `80`, `160`, `320`, or `640`. The object sets this property based on the [`SubcarrierSpacing`](https://ww2.mathworks.cn/help/releases/R2025a/5g/ref/nrcarrierconfig.html#mw_object_nrCarrierConfig_sep_mw_5af25740-a086-4ff7-97ac-68a9c6b1c0d1) property values `15`, `30`, `60`, `120`, `240`, `480`, and `960`, respectively.
+
+   
 
 2. Configure **5G Carrier, PRS, and Path Loss**
 
