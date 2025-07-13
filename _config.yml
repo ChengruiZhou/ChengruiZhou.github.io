@@ -119,7 +119,7 @@ analytics:
 author:
   name             : "芯摆渡"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "MALTAB | Python | C++ | Embedded Systems | Machine Learning"
+  bio              : "Embedded Systems"
   location         : "江苏"
   links:
     # - label: "Email"
