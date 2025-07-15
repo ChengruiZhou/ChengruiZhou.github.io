@@ -306,7 +306,6 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -318,14 +317,4 @@ defaults:
       related: false 
       toc: true  
       toc_sticky: true 
-      comments: true
-  # _sp-blocks
-  - scope:
-      path: ""
-      type: sp-blocks
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: true
       comments: true
